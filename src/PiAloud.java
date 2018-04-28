@@ -10,11 +10,14 @@ public class PiAloud {
 	// 1. Make a main method and make sure your program can run
 	public static void main(String[] args) {
 		
-	}
+
 	// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
-
+		String Pi = "3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862";
 	// 3. Print out some digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
-
+		for (int i=0;i<Pi.length();i++) {
+			System.out.println(Pi.charAt(i));
+			speak(Pi.charAt(i));
+		}
 	// 4. Print ALL the digits of of Pi (hint: use a loop)
 
 	// 5. Use the speak() method to speak all the digits of Pi.
